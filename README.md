@@ -1,4 +1,5 @@
 # Conversor a braille
+> ⠨⠉⠕⠝⠧⠑⠗⠎⠕⠗⠀⠁⠀⠃⠗⠁⠊⠇⠇⠑
 
 Este conversor utiliza la versión estándar del braille *en Español*,
 según el [*World Braille Usage*, 3ra Edición](https://www.perkins.org/wp-content/uploads/2021/07/world-braille-usage-third-edition.pdf) (2013),
