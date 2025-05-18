@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Texto a Braille</title>
+</head>
+<body>
+<h1>Conversor a Braille</h1>
+
+<div class="container">
+  <p>
+    Este conversor utiliza la versión estándar del braille <em>en Español</em> según el
+    <a href="https://www.perkins.org/wp-content/uploads/2021/07/world-braille-usage-third-edition.pdf" target="_blank"><em lang="en">World Braille Usage</em>, 3ra Edición</a> (2013),
+    página 217. Para los números y algunas operaciones matemáticas básicas (para la multiplicación y división pueden usarse los caracteres <code>×</code> y <code>÷</code>), utiliza lo definido en el <a href="https://www.ulacdigital.org/images/espacio-braille/04%20-%20Codigo%20Matematico%20Unificado%20para%20Iberoamerica%202%20edicion.pdf" target="_blank">Código matemático unificado para Iberoamérica</a> (2023),
+    aunque el soporte es bastante limitado.
+  </p>
+
+  <div class="input-container">
+    <label for="texto-entrada">Texto a convertir:</label>
+    <textarea id="texto-entrada" placeholder="Escribí acá..."></textarea>
+  </div>
+
+  <div class="output-container">
+    <label>Resultado en braille:</label>
+    <div id="resultado-braille"></div>
+  </div>
+</div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
