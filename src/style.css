@@ -67,7 +67,7 @@ h1 {
   &:not(.error) {
     font-family: 'Braille CC0', monospace;
     font-size: 2em;
-    white-space: pre;
+    overflow-wrap: break-word;
     line-height: 1;
     padding-bottom: 0;
 
