@@ -8,7 +8,12 @@ body {
   font-family: Arial, sans-serif;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  height: 100dvh;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 1em;
 }
 
 h1 {
@@ -16,13 +21,8 @@ h1 {
   text-align: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.input-container {
+.input-container, .output-container {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +39,7 @@ h1 {
   border-radius: 4px;
   min-height: 100px;
   transition: border-color 0.3s;
+  resize: vertical;
 }
 
 #texto-entrada:focus {
@@ -49,11 +50,6 @@ h1 {
 #texto-entrada.error {
   border-color: #e74c3c;
   background-color: #ffeeee;
-}
-
-.output-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .output-container label {
