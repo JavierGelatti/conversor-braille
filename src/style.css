@@ -8,12 +8,16 @@ body {
   font-family: Arial, sans-serif;
   max-width: 800px;
   margin: 0 auto;
-  height: 100dvh;
-  box-sizing: border-box;
 }
 
 main {
+  height: 100dvh;
+  box-sizing: border-box;
   padding: 1em;
+
+  & > :last-child {
+    padding-bottom: 1em;
+  }
 }
 
 h1 {
