@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/braille-cc0');
+
 body {
   font-family: Arial, sans-serif;
   max-width: 800px;
@@ -63,7 +65,7 @@ h1 {
   background-color: #f9f9f9;
 
   &:not(.error) {
-    font-family: 'BrailleRegular', monospace;
+    font-family: 'Braille CC0', 'BrailleRegular', monospace;
     font-size: 24px;
     letter-spacing: -.029em;
     line-height: 1.36;
