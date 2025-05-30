@@ -4,7 +4,7 @@ import {comoBraille} from "./braille.ts";
 const areaDeEntrada = document.getElementById('texto-entrada') as HTMLTextAreaElement;
 const elementoResultado = document.getElementById('resultado-braille') as HTMLDivElement;
 
-areaDeEntrada.addEventListener('input', () => {
+const refrescarResultado = () => {
     const textoEntrada = areaDeEntrada.value;
 
     try {
@@ -18,4 +18,7 @@ areaDeEntrada.addEventListener('input', () => {
             elementoResultado.textContent = error.message;
         }
     }
-});
+};
+
+areaDeEntrada.addEventListener('input', refrescarResultado);
+refrescarResultado();
